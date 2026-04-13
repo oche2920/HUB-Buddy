@@ -394,12 +394,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 - Thanks to all our contributors and supporters
 - Special thanks to the open-source community
 
-## Contact
-
-- **Email**: hello@hubbuddy.io
-- **Website**: https://hubbuddy.io
-- **GitHub**: https://github.com/yourusername/HUB-Buddy
-
 ---
 
 **Let's build a better, more transparent community platform together!** 🚀
