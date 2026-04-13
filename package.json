@@ -1,0 +1,35 @@
+{
+  "name": "hub-buddy",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "shared/*"
+  ],
+  "scripts": {
+    "dev": "bun run dev",
+    "build": "bun run build",
+    "test": "bun test",
+    "lint": "biome check .",
+    "format": "biome format .",
+    "format:fix": "biome check . --write",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky",
+    "clean": "rm -rf node_modules apps/*/node_modules shared/*/node_modules"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "biome check --write",
+      "biome format --write"
+    ]
+  }
+}
